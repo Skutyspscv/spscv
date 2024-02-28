@@ -1,0 +1,861 @@
+(saveFormat "7.0")
+(date "Thu 08/Feb/2024 10:03:31 ")
+(veerev "9.33.1811.0201")
+(platform "PC")
+(execMode v6)
+(prefExecMode v9)
+(filterNAN 0)
+(workspaceStackingOrder M)
+(sysconfig
+(iodevice "newInstrument"
+(type ASRL)
+(channel 191)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "ASRL1::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAlias "COM1")
+(VISAddr "ASRL1::INSTR")
+(model ""
+(standard 488.2))
+(baudRate 9600)
+(charSize 8)
+(stopBits 1)
+(parity off)
+(handshake off)
+(recvBufferSize 4096))
+(iodevice "newInstrument2"
+(type ASRL)
+(channel 192)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "ASRL2::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAlias "COM2")
+(VISAddr "ASRL2::INSTR")
+(model ""
+(standard 488.2))
+(baudRate 9600)
+(charSize 8)
+(stopBits 1)
+(parity off)
+(handshake off)
+(recvBufferSize 4096))
+(iodevice "newInstrument3"
+(type ASRL)
+(channel 200)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "ASRL10::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAlias "LPT1")
+(VISAddr "ASRL10::INSTR")
+(model ""
+(standard 488.2))
+(baudRate 9600)
+(charSize 8)
+(stopBits 1)
+(parity off)
+(handshake off)
+(recvBufferSize 4096))
+(iodevice "newInstrument4"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "hp33120a")
+(isPresent 1)
+(ppAddr "GPIB0::16::INSTR")
+(ScpiFileName "hp33120a.xml")
+(model "hp33120a")
+(eoiEnabled 1)
+(VISAddr "GPIB0::16::INSTR")
+(model "hp33120a"
+(standard 488)))
+(iodevice "newInstrument5"
+(type USB)
+(channel 170)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "keedux1052g")
+(ppAddr "USB0::0x2A8D::0x039B::CN60131158::INSTR")
+(ScpiFileName "keedux1052g.xml")
+(model "keedux1052g")
+(eoiEnabled 1)
+(VISAddr "USB0::0x2A8D::0x039B::CN60131158::INSTR")
+(model "keedux1052g"
+(standard 488)))
+(iodevice "newInstrument6"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "hpe3631a")
+(isPresent 1)
+(ppAddr "GPIB0::5::INSTR")
+(ScpiFileName "hpe3631a.xml")
+(model "hpe3631a")
+(eoiEnabled 1)
+(VISAddr "GPIB0::5::INSTR")
+(model "hpe3631a"
+(standard 488)))
+(iodevice "newInstrument7"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "hp34401a")
+(isPresent 1)
+(ppAddr "GPIB0::22::INSTR")
+(ScpiFileName "hp34401a.xml")
+(model "hp34401a")
+(eoiEnabled 1)
+(VISAddr "GPIB0::22::INSTR")
+(model "hp34401a"
+(standard 488)))
+(iodevice "newInstrument8"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "hp34970a")
+(isPresent 1)
+(ppAddr "GPIB0::10::INSTR")
+(ScpiFileName "hp34970a.xml")
+(model "hp34970a")
+(eoiEnabled 1)
+(VISAddr "GPIB0::10::INSTR")
+(model "hp34970a"
+(standard 488)))
+(iodevice "newInstrument9"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "gwgdm8342g")
+(isPresent 1)
+(ppAddr "GPIB0::15::INSTR")
+(ScpiFileName "gwgdm8342g.xml")
+(model "gwgdm8342g")
+(eoiEnabled 1)
+(VISAddr "GPIB0::15::INSTR")
+(model "gwgdm8342g"
+(standard 488)))
+(iodevice "newInstrument10"
+(type ASRL)
+(channel 193)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "ASRL3::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAlias "COM3")
+(VISAddr "ASRL3::INSTR")
+(model ""
+(standard 488.2))
+(baudRate 9600)
+(charSize 8)
+(stopBits 1)
+(parity off)
+(handshake off)
+(recvBufferSize 4096))
+(iodevice "newInstrument11"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "gwaps-7050")
+(isPresent 1)
+(ppAddr "GPIB0::12::INSTR")
+(ScpiFileName "gwaps-7050.xml")
+(model "gwaps-7050")
+(eoiEnabled 1)
+(VISAddr "GPIB0::12::INSTR")
+(model "gwaps-7050"
+(standard 488))))
+(SaveCF no)
+(device 0 ROOTCONTEXT
+(properties
+(variableName Main)
+(variableScope glob)
+(trigMode deg)
+(nextID 28)
+(popupTitleText "Untitled")
+(popupMoveable 1)
+(deleteGlobals 0))
+(deviceList
+(device 0 INPUTDLG
+(properties
+(name "Real64 Input")
+(variableScope cont)
+(popupTitle "Real64 Input")
+(prompt "Zadejte Izmax:")
+(initialValue "70m")
+(valueConstraint "0<=value AND value<=70")
+(vErrorMessage "Mus\355te zadat hodnotu od 0 do 70mA."))
+(interface
+(output 1
+(name "Value")
+(lock name constraints))
+(output 2
+(name "Cancel")
+(lock name constraints)))
+(implementation
+(inputType "real")))
+(device 2 IODEVICE
+(properties
+(name "newInstrument6 (hpe3631a @GPIB0::5::INSTR)")
+(variableScope cont)
+(transactions 8 "WRITE TEXT \"APPLy P6V,0\" EOL"
+"WRITE TEXT \"INST:NSELECT 2\" EOL"
+"WRITE TEXT \"SOURCE:CURRENT:AMPL \", Iz EOL"
+"WRITE TEXT \"SOURCE:VOLTAGE:AMPL 0\" EOL" "WRITE TEXT \"INST:NSELECT 3\" EOL"
+"WRITE TEXT \"SOURCE:CURRENT:AMPL \", Iz EOL"
+"WRITE TEXT \"SOURCE:VOLTAGE:AMPL 0\" EOL" "WRITE TEXT \"OUTPUT ON\" EOL"))
+(interface
+(input 1
+(name "Iz")
+(optional yes)))
+(implementation
+(ioDevType 13)
+(iopath "newInstrument6")))
+(device 3 FORRANGE
+(properties
+(variableScope cont)
+(from 0)
+(thru 1)
+(step 0.05))
+(interface
+(output 1
+(name "Data")
+(lock name constraints))))
+(device 4 IODEVICE
+(properties
+(name "newInstrument6 (hpe3631a @GPIB0::5::INSTR)")
+(variableScope cont)
+(transactions 2 "WRITE TEXT \"INST:NSELECT 2\" EOL"
+"WRITE TEXT \"SOURCE:VOLT:AMPL \", Uz EOL"))
+(interface
+(input 1
+(name "Uz")
+(optional yes)))
+(implementation
+(ioDevType 13)
+(iopath "newInstrument6")))
+(device 7 IODEVICE
+(properties
+(name "newInstrument6 (hpe3631a @GPIB0::5::INSTR)")
+(variableScope cont)
+(transactions 4 "WRITE TEXT \"MEASURE:CURRENT:DC?\" EOL" "READ TEXT Ir REAL64"
+"WRITE TEXT \"MEASURE:VOLTAGE:DC?\" EOL" "READ TEXT Ur REAL64"))
+(interface
+(output 1
+(name "Ir")
+(optional yes))
+(output 2
+(name "Ur")
+(optional yes)))
+(implementation
+(ioDevType 13)
+(iopath "newInstrument6")))
+(device 8 XYPLOT
+(properties
+(variableScope cont))
+(interface
+(input 1
+(name "XData")
+(lock constraints))
+(input 2
+(name "YData1")
+(lock constraints))
+(input 3
+(type control)
+(name "Next Curve")
+(lock name constraints)
+(optional yes)))
+(implementation
+(tracePin 2)
+(graphMode rectangular)
+(autoAutoX)
+(autoAutoY)))
+(device 9 IFTHENELSE
+(properties
+(variableScope cont)
+(cases 1 "Inam>=(Imax-0.5m)"))
+(interface
+(input 1
+(name "Imax")
+(optional yes))
+(input 2
+(name "Inam")
+(optional yes))
+(output 1
+(name "Then")
+(lock name constraints))
+(output 2
+(name "Else")
+(lock name constraints))))
+(device 10 EXITTHREAD
+(properties
+(variableScope cont)))
+(device 15 JUNCTION
+(properties
+(name "JCT")
+(variableScope cont))
+(interface
+(input 1
+(name "A"))
+(input 2
+(name "B"))
+(output 1
+(name "Data"))))
+(device 13 FORRANGE
+(properties
+(variableScope cont)
+(from 16)
+(thru 21)
+(step 0.05))
+(interface
+(input 1
+(name "From")
+(tag "From")
+(requires
+(datatype Real64)
+(shape "Scalar"))
+(lock constraints)
+(optional yes)
+(buffer YES))
+(input 2
+(name "Thru")
+(tag "Thru")
+(requires
+(datatype Real64)
+(shape "Scalar"))
+(lock constraints)
+(optional yes)
+(buffer YES))
+(output 1
+(name "Data")
+(lock name constraints))))
+(device 14 INPUTDLG
+(properties
+(name "Real64 Input")
+(variableScope cont)
+(popupTitle "Real64 Input")
+(prompt "Zadejte Uzmin:")
+(initialValue "16")
+(valueConstraint "0<=value AND value<=25")
+(vErrorMessage "Mus\355te zadat hodnotu od 0 do 25V."))
+(interface
+(output 1
+(name "Value")
+(lock name constraints))
+(output 2
+(name "Cancel")
+(lock name constraints)))
+(implementation
+(inputType "real")))
+(device 17 IODEVICE
+(properties
+(name "newInstrument6 (hpe3631a @GPIB0::5::INSTR)")
+(variableScope cont)
+(transactions 2 "WRITE TEXT \"INST:NSELECT 3\" EOL"
+"WRITE TEXT \"SOURCE:VOLT:AMPL \", Uz EOL"))
+(interface
+(input 1
+(name "Uz")
+(optional yes)))
+(implementation
+(ioDevType 13)
+(iopath "newInstrument6")))
+(device 18 FORMULA
+(properties
+(variableScope cont)
+(expr 1 "A+5"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 19 FORRANGE
+(properties
+(variableScope cont)
+(from 0)
+(thru 16)
+(step 1))
+(interface
+(input 1
+(name "Thru")
+(tag "Thru")
+(requires
+(datatype Real64)
+(shape "Scalar"))
+(lock constraints)
+(optional yes)
+(buffer YES))
+(output 1
+(name "Data")
+(lock name constraints))))
+(device 20 FORMULA
+(properties
+(variableScope cont)
+(expr 1 "(-A)"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 21 IODEVICE
+(properties
+(name "newInstrument6 (hpe3631a @GPIB0::5::INSTR)")
+(variableScope cont)
+(transactions 4 "WRITE TEXT \"MEASURE:CURRENT:DC?\" EOL" "READ TEXT If REAL64"
+"WRITE TEXT \"MEASURE:VOLTAGE:DC?\" EOL" "READ TEXT Uf REAL64"))
+(interface
+(output 1
+(name "If")
+(optional yes))
+(output 2
+(name "Uf")
+(optional yes)))
+(implementation
+(ioDevType 13)
+(iopath "newInstrument6")))
+(device 22 JUNCTION
+(properties
+(name "JCT")
+(variableScope cont))
+(interface
+(input 1
+(name "A"))
+(input 2
+(name "B"))
+(output 1
+(name "Data"))))
+(device 23 JUNCTION
+(properties
+(name "JCT")
+(variableScope cont))
+(interface
+(input 1
+(name "A"))
+(input 2
+(name "B"))
+(output 1
+(name "Data"))))
+(device 24 FORMULA
+(properties
+(variableScope cont)
+(expr 1 "(-If)"))
+(interface
+(input 1
+(name "If")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 25 IFTHENELSE
+(properties
+(variableScope cont)
+(cases 1 "If>=(Imax-0.5m)"))
+(interface
+(input 1
+(name "Imax")
+(optional yes))
+(input 2
+(name "If")
+(optional yes))
+(output 1
+(name "Then")
+(lock name constraints))
+(output 2
+(name "Else")
+(lock name constraints))))
+(device 26 IFTHENELSE
+(properties
+(variableScope cont)
+(cases 1 "A==0"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(output 1
+(name "Then")
+(lock name constraints))
+(output 2
+(name "Else")
+(lock name constraints))))
+(device 27 IODEVICE
+(properties
+(name "newInstrument6 (hpe3631a @GPIB0::5::INSTR)")
+(variableScope cont)
+(transactions 1 "WRITE TEXT \"APPLY P6V,6\" EOL"))
+(implementation
+(ioDevType 13)
+(iopath "newInstrument6")))
+(configuration
+(connect D0:1 D1:1)
+(connect D1:0 D2:0)
+(connect D2:1 D3:1)
+(connect D3:0 D4:0)
+(connect D16:1 D5:1)
+(connect D17:1 D5:2)
+(connect D20:1 D5:3)
+(connect D0:1 D6:1)
+(connect D4:1 D6:2)
+(connect D19:1 D7:0)
+(connect D13:1 D8:1)
+(connect D9:1 D8:2)
+(connect D13:0 D9:0)
+(connect D10:1 D9:1)
+(connect D12:1 D9:2)
+(connect D21:0 D10:0)
+(connect D14:1 D11:1)
+(connect D10:1 D12:1)
+(connect D10:0 D13:0)
+(connect D10:1 D13:1)
+(connect D8:1 D14:1)
+(connect D11:0 D15:0)
+(connect D4:2 D16:1)
+(connect D15:2 D16:2)
+(connect D18:1 D17:1)
+(connect D4:1 D17:2)
+(connect D15:1 D18:1)
+(connect D0:1 D19:1)
+(connect D15:1 D19:2)
+(connect D8:1 D20:1)
+(connect D6:1 D21:0)))
+(contextCarrier
+(wndRestoredOrigin 2 2)
+(wndRestoredExtent 702 385)
+(wndState max)
+(active detail)
+(detail
+(extent 1893 861)
+(anchorPt -238 194)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon)
+(open
+(extent 431 107))
+(terminals on)
+(pinCenter 500 -110))
+(devCarrierFor 2
+(active open)
+(icon
+(extent 287 51)
+(iconImage "io.icn"))
+(open
+(extent 384 146))
+(terminals on)
+(pinCenter 1090 -100))
+(devCarrierFor 3
+(active open)
+(icon
+(iconImage "loop.icn"))
+(open
+(extent 84 56))
+(pinCenter 310 40))
+(devCarrierFor 4
+(active open)
+(icon
+(iconImage "io.icn"))
+(open
+(extent 314 74))
+(terminals on)
+(pinCenter 630 40))
+(devCarrierFor 7
+(active open)
+(icon
+(iconImage "io.icn"))
+(open
+(extent 354 86))
+(terminals on)
+(pinCenter 490 180))
+(devCarrierFor 8
+(active open)
+(icon
+(iconImage "display.icn"))
+(open
+(extent 554 409)
+(displayMode 47)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "Y name")
+(domainName "X name")
+(Yspacing 1)
+(Xspacing 2)
+(scaleColor "Dark Gray")
+(show 1)
+(range -0.08 0.08 4 linear))
+(domain -18 2 4 linear)
+(trace 0 onScale 0
+(name "YData1")
+(traceColor "Black")
+(lineType 12)
+(pointType 0))
+(displayBg "White")
+(markerColor "White"))
+(pinCenter 1800 40))
+(devCarrierFor 9
+(active open)
+(icon)
+(open
+(extent 141 76))
+(terminals on)
+(pinCenter 1010 60))
+(devCarrierFor 10
+(active icon)
+(icon
+(extent 67 15))
+(open
+(extent 24 36))
+(terminals on)
+(pinCenter 1670 400))
+(devCarrierFor 15
+(active icon)
+(icon
+(extent 26 25))
+(open)
+(terminals on)
+(pinCenter 460 550))
+(devCarrierFor 13
+(active open)
+(icon
+(iconImage "loop.icn"))
+(open
+(extent 84 56))
+(pinCenter 340 600))
+(devCarrierFor 14
+(active open)
+(icon)
+(open
+(extent 431 107))
+(terminals on)
+(pinCenter 830 330))
+(devCarrierFor 17
+(active open)
+(icon
+(iconImage "io.icn"))
+(open
+(extent 314 74))
+(terminals on)
+(pinCenter 1070 470))
+(devCarrierFor 18
+(active open)
+(icon)
+(open
+(extent 145 50))
+(terminals on)
+(pinCenter 400 310))
+(devCarrierFor 19
+(active open)
+(icon
+(extent 94 71)
+(iconImage "loop.icn"))
+(open
+(extent 84 56))
+(pinCenter 360 490))
+(devCarrierFor 20
+(active open)
+(icon)
+(open
+(extent 145 50))
+(terminals on)
+(pinCenter 660 500))
+(devCarrierFor 21
+(active open)
+(icon
+(iconImage "io.icn"))
+(open
+(extent 384 86))
+(terminals on)
+(pinCenter 1060 600))
+(devCarrierFor 22
+(active icon)
+(icon
+(extent 26 25))
+(open)
+(terminals on)
+(pinCenter 1240 100))
+(devCarrierFor 23
+(active icon)
+(icon
+(extent 26 25))
+(open)
+(terminals on)
+(pinCenter 1240 140))
+(devCarrierFor 24
+(active open)
+(icon)
+(open
+(extent 145 50))
+(terminals on)
+(pinCenter 1480 570))
+(devCarrierFor 25
+(active open)
+(icon)
+(open
+(extent 141 76))
+(terminals on)
+(pinCenter 1480 370))
+(devCarrierFor 26
+(active open)
+(icon)
+(open
+(extent 54 51))
+(terminals on)
+(pinCenter 1355 260))
+(devCarrierFor 27
+(active open)
+(icon
+(extent 287 51)
+(iconImage "io.icn"))
+(open
+(extent 234 76))
+(terminals on)
+(pinCenter 1040 190))
+(connect D0:1 D1:1
+(points 6 768 -140 790 -140 790 -120 840 -120 840 -100 865 -100))
+(connect D1:0 D2:0
+(points 8 1090 -25 1090 -10 860 -10 860 -40 790 -40 790 -30 310 -30 310 -9))
+(connect D2:1 D3:1
+(points 2 354 40 440 40))
+(connect D3:0 D4:0
+(points 4 630 79 630 100 490 100 490 116))
+(connect D16:1 D5:1
+(points 6 1255 100 1270 100 1270 30 1330 30 1330 -90 1520 -90))
+(connect D17:1 D5:2
+(points 4 1255 140 1290 140 1290 40 1520 40))
+(connect D20:1 D5:3
+(points 4 1424 250 1440 250 1440 170 1520 170))
+(connect D0:1 D6:1
+(points 8 768 -140 790 -140 790 -120 840 -120 840 -30 850 -30 850 40 897 40))
+(connect D4:1 D6:2
+(points 6 699 160 720 160 720 150 870 150 870 80 897 80))
+(connect D19:1 D7:0
+(points 3 1593 350 1670 350 1670 390))
+(connect D13:1 D8:1
+(points 4 404 490 420 490 420 540 444 540))
+(connect D9:1 D8:2
+(points 4 384 600 400 600 400 560 444 560))
+(connect D13:0 D9:0
+(points 4 360 520 360 530 340 530 340 551))
+(connect D10:1 D9:1
+(points 10 1098 300 1120 300 1120 400 860 400 860 420 300 420 300 500 290 500
+290 580 295 580))
+(connect D12:1 D9:2
+(points 6 525 310 550 310 550 360 280 360 280 620 295 620))
+(connect D21:0 D10:0
+(points 4 1040 230 1040 250 840 250 840 256))
+(connect D14:1 D11:1
+(points 4 785 500 810 500 810 470 880 470))
+(connect D10:1 D12:1
+(points 10 1098 300 1120 300 1120 400 860 400 860 420 300 420 300 410 270 410
+270 310 295 310))
+(connect D10:0 D13:0
+(points 4 840 386 840 410 360 410 360 441))
+(connect D10:1 D13:1
+(points 8 1098 300 1120 300 1120 400 860 400 860 420 300 420 300 490 315 490))
+(connect D8:1 D14:1
+(points 6 475 550 500 550 500 510 530 510 530 500 555 500))
+(connect D11:0 D15:0
+(points 4 1070 509 1070 520 1060 520 1060 536))
+(connect D4:2 D16:1
+(points 6 699 200 720 200 720 210 1190 210 1190 90 1224 90))
+(connect D15:2 D16:2
+(points 8 1284 620 1290 620 1290 570 1300 570 1300 390 1210 390 1210 110 1224
+110))
+(connect D18:1 D17:1
+(points 10 1605 570 1630 570 1630 500 1350 500 1350 380 1270 380 1270 180 1200
+180 1200 130 1224 130))
+(connect D4:1 D17:2
+(points 8 699 160 720 160 720 150 910 150 910 200 1180 200 1180 150 1224 150))
+(connect D15:1 D18:1
+(points 4 1284 580 1310 580 1310 570 1375 570))
+(connect D0:1 D19:1
+(points 10 768 -140 790 -140 790 -120 840 -120 840 -30 850 -30 850 50 1280 50
+1280 350 1367 350))
+(connect D15:1 D19:2
+(points 4 1284 580 1310 580 1310 390 1367 390))
+(connect D8:1 D20:1
+(points 12 475 550 500 550 500 510 530 510 530 440 570 440 570 330 560 330 560
+240 1120 240 1120 260 1295 260))
+(connect D6:1 D21:0
+(points 5 1123 40 1140 40 1140 110 1040 110 1040 131)))
+(stackingOrder 17 16 0 2 3 4 9 11 19 20 10 6 8 14 21 1 12 13 15 5 7 18))
+(numberFormats
+(realFormat standard)
+(realSigDigits 4)
+(realRadixSpec 4)
+(integerBase decimal))))

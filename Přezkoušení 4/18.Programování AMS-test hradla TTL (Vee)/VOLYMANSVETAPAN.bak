@@ -1,0 +1,417 @@
+(saveFormat "7.0")
+(date "Thu 15/Feb/2024 09:30:16 ")
+(veerev "9.33.1811.0201")
+(platform "PC")
+(execMode v6)
+(prefExecMode v9)
+(filterNAN 0)
+(workspaceStackingOrder M)
+(sysconfig
+(iodevice "newInstrument2"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "ag33220a")
+(ppAddr "GPIB0::10::INSTR")
+(ScpiFileName "ag33220a.xml")
+(model "ag33220a")
+(eoiEnabled 1)
+(VISAddr "GPIB0::10::INSTR")
+(model "ag33220a"
+(standard 488)))
+(iodevice "newInstrument4"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "agdso6012a")
+(ppAddr "GPIB0::7::INSTR")
+(ScpiFileName "agdso6012a.xml")
+(model "agdso6012a")
+(eoiEnabled 1)
+(VISAddr "GPIB0::7::INSTR")
+(model "agdso6012a"
+(standard 488)))
+(iodevice "newInstrument5"
+(type TCPIP)
+(channel 180)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "ridg4062")
+(ppAddr "TCPIP0::10.0.1.30::inst0::INSTR")
+(ScpiFileName "ridg4062.xml")
+(model "ridg4062")
+(eoiEnabled 1)
+(VISAddr "TCPIP0::10.0.1.30::inst0::INSTR")
+(model "ridg4062"
+(standard 488)))
+(iodevice "newInstrument6"
+(type USB)
+(channel 170)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "ridp832")
+(ppAddr "USB0::6833::3601::DP8C172002015::0::INSTR")
+(ScpiFileName "ridp832.xml")
+(model "ridp832")
+(eoiEnabled 1)
+(VISAlias "USBInstrument1")
+(VISAddr "USB0::6833::3601::DP8C172002015::0::INSTR")
+(model "ridp832"
+(standard 488)))
+(iodevice "newInstrument3"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 11)
+(byteOrder 0)
+(idFileName "hp34401a.cid")
+(idn "hp34401a")
+(subAddrStr "22")
+(ppAddr "GPIB0::22::INSTR")
+(ScpiFileName "hp34401a.xml")
+(model "hp34401a")
+(eoiEnabled 1)
+(VISAddr "GPIB0::22::INSTR")
+(model "hp34401a"
+(standard 488)))
+(iodevice "newInstrument8"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(idn "gwgdm8342g")
+(ppAddr "GPIB0::16::INSTR")
+(ScpiFileName "gwgdm8342g.xml")
+(model "gwgdm8342g")
+(eoiEnabled 1)
+(VISAddr "GPIB0::16::INSTR")
+(model "gwgdm8342g"
+(standard 488)))
+(iodevice "newInstrument7"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB0::15::INSTR")
+(model "GPM8213")
+(eoiEnabled 1)
+(VISAddr "GPIB0::15::INSTR")
+(model "GPM8213"
+(standard 488))))
+(SaveCF no)
+(device 0 ROOTCONTEXT
+(properties
+(variableName Main)
+(variableScope glob)
+(trigMode deg)
+(nextID 12)
+(popupTitleText "Untitled")
+(popupMoveable 1))
+(deviceList
+(device 0 CONSTANT
+(properties
+(name "Coord")
+(variableScope cont)
+(enableEditing 1))
+(interface
+(output 1
+(name "Coord")
+(lock name constraints)))
+(implementation
+(value Coord
+(numDims 1)
+(size 3)
+(numCoordDims 2)
+(data  [ (0, 2.4) (0.8, 2.4) (0.8, 0) ]))
+(initValue Coord
+(numCoordDims 2)
+(data  (0, 0)))))
+(device 1 CONSTANT
+(properties
+(name "Coord")
+(variableScope cont)
+(enableEditing 1))
+(interface
+(output 1
+(name "Coord")
+(lock name constraints)))
+(implementation
+(value Coord
+(numDims 1)
+(size 3)
+(numCoordDims 2)
+(data  [ (2, 5) (2, 0.4) (5, 0.4) ]))
+(initValue Coord
+(numCoordDims 2)
+(data  (0, 0)))))
+(device 4 YPLOT
+(properties
+(name "XY Trace")
+(variableScope cont))
+(interface
+(input 1
+(name "Trace1")
+(lock constraints))
+(input 2
+(name "Trace2")
+(lock constraints)
+(optional yes))
+(input 3
+(name "Trace3")
+(lock constraints)
+(optional yes)))
+(implementation
+(tracePin 1)
+(tracePin 2)
+(tracePin 3)
+(graphMode rectangular)
+(autoAutoX)
+(autoAutoY)))
+(device 5 IODEVICE
+(properties
+(name "Generator 33220A")
+(variableScope cont)
+(transactions 3 "WRITE TEXT \"FUNCTION DC\" EOL"
+"WRITE TEXT \"OUTPUT:LOAD INFINITY\" EOL" "WRITE TEXT \"OUTPUT ON\" EOL"))
+(implementation
+(ioDevType 13)
+(iopath "newInstrument2")))
+(device 6 IODEVICE
+(properties
+(name "Voltmetr 34401a")
+(variableScope cont)
+(transactions 2 "WRITE TEXT \"MEASURE:VOLATAGE:DC?, 10,0.001\" EOL"
+"READ TEXT U2 REAL64"))
+(interface
+(output 1
+(name "U2")
+(optional yes)))
+(implementation
+(ioDevType 13)
+(iopath "newInstrument3")))
+(device 7 FORRANGE
+(properties
+(variableScope cont)
+(from 0)
+(thru 5)
+(step 0.1))
+(interface
+(output 1
+(name "Data")
+(lock name constraints))))
+(device 9 IODEVICE
+(properties
+(name "Voltmetr 34401a")
+(variableScope cont)
+(transactions 1 "WRITE TEXT \"VOLTAGE:OFFSET \", U1 EOL"))
+(interface
+(input 1
+(name "U1")
+(optional yes)))
+(implementation
+(ioDevType 13)
+(iopath "newInstrument3")))
+(device 10 DELAY
+(properties
+(variableScope cont)
+(delay 0.1))
+(interface
+(output 1
+(name "Done"))))
+(device 11 TOCOORDINATE
+(properties
+(variableScope cont))
+(interface
+(input 1
+(name "X Data")
+(tag "X")
+(requires
+(datatype Real64))
+(lock constraints))
+(input 2
+(name "Y Data")
+(tag "Y")
+(requires
+(datatype Real64))
+(lock constraints))
+(output 1
+(name "Coord")
+(tag "Coord"))))
+(configuration
+(connect D0:1 D2:1)
+(connect D1:1 D2:2)
+(connect D8:1 D2:3)
+(connect D7:0 D4:0)
+(connect D3:0 D5:0)
+(connect D5:1 D6:1)
+(connect D6:0 D7:0)
+(connect D5:1 D8:1)
+(connect D4:1 D8:2)))
+(contextCarrier
+(wndRestoredOrigin 2 2)
+(wndRestoredExtent 702 385)
+(wndState max)
+(active detail)
+(detail
+(extent 1893 869)
+(anchorPt 15 -10)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon)
+(open
+(extent 117 60)
+(showFormat real))
+(pinCenter 730 160))
+(devCarrierFor 1
+(active open)
+(icon)
+(open
+(extent 117 60)
+(showFormat real))
+(pinCenter 730 420))
+(devCarrierFor 4
+(active open)
+(icon
+(iconImage "display.icn"))
+(open
+(extent 724 496)
+(displayMode 47)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "Y name")
+(domainName "X name")
+(Yspacing 1)
+(Xspacing 2)
+(scaleColor "Dark Gray")
+(show 1)
+(range 0 5 4 linear))
+(domain 0 5 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(traceColor "Red")
+(lineType 12)
+(pointType 0))
+(trace 1 onScale 0
+(name "Trace2")
+(traceColor "Red")
+(lineType 12)
+(pointType 0))
+(trace 2 onScale 0
+(name "Trace3")
+(traceColor "Lightest Gray")
+(lineType 12)
+(pointType 0))
+(displayBg "White")
+(markerColor "White"))
+(pinCenter 1180 290))
+(devCarrierFor 5
+(active open)
+(icon
+(extent 110 0)
+(iconImage "io.icn"))
+(open
+(extent 364 96))
+(terminals on)
+(pinCenter 240 90))
+(devCarrierFor 6
+(active open)
+(icon
+(extent 97 0)
+(iconImage "io.icn"))
+(open
+(extent 364 106))
+(terminals on)
+(pinCenter 250 610))
+(devCarrierFor 7
+(active open)
+(icon
+(iconImage "loop.icn"))
+(open
+(extent 99 79))
+(pinCenter 240 250))
+(devCarrierFor 9
+(active open)
+(icon
+(extent 97 0)
+(iconImage "io.icn"))
+(open
+(extent 364 106))
+(terminals on)
+(pinCenter 250 390))
+(devCarrierFor 10
+(active open)
+(icon)
+(open
+(extent 71 31))
+(pinCenter 250 500))
+(devCarrierFor 11
+(active open)
+(icon
+(extent 104 74)
+(iconImage "build.icn"))
+(open
+(extent 12 50))
+(terminals on)
+(pinCenter 610 550))
+(connect D0:1 D2:1
+(points 4 791 160 803 160 803 130 815 130))
+(connect D1:1 D2:2
+(points 4 791 420 803 420 803 290 815 290))
+(connect D8:1 D2:3
+(points 4 668 550 800 550 800 450 815 450))
+(connect D7:0 D4:0
+(points 2 250 518 250 536))
+(connect D3:0 D5:0
+(points 2 240 140 240 190))
+(connect D5:1 D6:1
+(points 6 292 250 310 250 310 300 20 300 20 390 35 390))
+(connect D6:0 D7:0
+(points 2 250 445 250 464))
+(connect D5:1 D8:1
+(points 6 292 250 310 250 310 300 480 300 480 540 551 540))
+(connect D4:1 D8:2
+(points 4 464 610 480 610 480 560 551 560)))
+(stackingOrder 1 0 3 5 6 7 4 8 2))
+(numberFormats
+(realFormat standard)
+(realSigDigits 4)
+(realRadixSpec 4)
+(integerBase decimal))))
